@@ -98,13 +98,52 @@ li{
 
     }
 
-.cards{
+/* ----------------- cards ---------------*/
+
+#second_bloc{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    row-gap: 10px;
+}
+#second_bloc h2{
+    font-size: 35px;
+    color: #363434;
    
 }
+.second_bloc_p {
+    font-size: 17px;
+    color: #878282;
+    width: 600px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+   justify-content: center;
+   column-gap: 30px;
+   width:100% ;
+   margin-top: 50px;
+}
+
 .card{
     width: 373px;
     height: 373px;
-    background: radial-gradient(rgb(171, 210, 244),#1ea7cc) ;
+    background: radial-gradient(rgb(171, 210, 244),#3193af) ;
     color:whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    padding :0px 20px 0px 20px 
 }
+.card i{
+    font-size: 50px;
+}
+.card h3{
+    font-size: 25px;
+}
+
