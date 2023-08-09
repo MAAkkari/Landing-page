@@ -191,12 +191,13 @@ padding-top: 100px;
     flex-direction: column;
     row-gap: 55px;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
+    padding: 100px 0px 0px 0px;
 }
 #team_presentation{
     display: flex;
     flex-direction: column;
-    padding: 70px 0px 0px 0px;
+   
     width:850px;
     text-align: center;
     row-gap: 10px;
@@ -257,3 +258,66 @@ padding-top: 100px;
     
 }
 
+/* ----------------- fifth bloc / parallax ---------------*/
+
+#parallax_bloc {
+    position: relative;
+    height: 545px;
+    margin-bottom: 500px;
+  
+  }
+  
+  #parallax_background {
+    background-image: url(/img/parallax.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+  }
+  
+  #parallax_background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 28, 28, 0.6);
+   
+  }
+  
+  #TextAndBtn_parallax {
+    text-align: center;
+    position: relative;
+    padding-top: 170px;
+    
+  }
+  
+  #TextAndBtn_parallax h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color : #ffffff;
+  }
+  
+  #TextAndBtn_parallax p {
+    font-size: 18px;
+    width: 1200px;
+    margin: 20px auto 50px auto;;
+    color: #ccc6c6;
+
+  }
+
+  #TextAndBtn_parallax button {
+    border-radius: 5px;
+    height: 53px;
+    width:175px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    background-color: transparent;
+    color:white;
+    font-size: 19px;
+    
+  }
