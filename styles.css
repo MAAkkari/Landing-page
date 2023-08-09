@@ -6,10 +6,9 @@
 }
 body{font-family: 'Poppins', sans-serif;}
 
-#premier_bloc{
-    padding-top: 15px;
-    background: radial-gradient(rgb(171, 210, 244),#3193af) ;
-}
+
+/* ----------------- header / Navbar ---------------*/
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -38,6 +37,13 @@ li{
 .navbar_component{
     color:white;
     text-decoration: none;
+}
+
+/* ----------------- first bloc / Newsletter ---------------*/
+
+#premier_bloc{
+    padding-top: 15px;
+    background: radial-gradient(rgb(171, 210, 244),#3193af) ;
 }
 
 #NewsletterAndCat{
@@ -102,7 +108,7 @@ li{
 
     }
 
-/* ----------------- cards ---------------*/
+/* -----------------Second block / cards ---------------*/
 
 #second_bloc{
     display: flex;
@@ -110,7 +116,7 @@ li{
     align-items: center;
     margin-top: 100px;
     row-gap: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 #second_bloc h2{
     font-size: 38px;
@@ -130,6 +136,7 @@ li{
    column-gap: 30px;
    width:100% ;
    margin-top: 80px;
+   
 }
 
 .card{
@@ -143,12 +150,110 @@ li{
     flex-direction: column;
     justify-content: center;
     row-gap: 25px;
-    padding :0px 20px 0px 20px 
+    padding :0px 20px 0px 20px;
+    box-shadow: -4px  4px 10px #9f9d9d;
 }
 .card i{
     font-size: 50px;
 }
 .card h3{
     font-size: 25px;
+}
+
+
+/* ----------------- third bloc ---------------*/
+
+#third_bloc{
+background-color: #f4f0f0;
+text-align: center;
+height: 800px;
+padding-top: 100px;
+}
+
+
+#third_bloc h2{
+    font-size: 38px;
+    color: #363434;
+}
+#third_bloc p {
+    font-size: 19px;
+    color: #878282;
+    width: 650px;
+    margin: 8px auto 0px auto;
+}
+
+
+/* ----------------- fourth bloc / Team members and stats ---------------*/
+
+/*intro team bloc */
+#team_bloc{
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    align-items: center;
+    margin-bottom: 300px;
+}
+#team_presentation{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0px 0px 0px;
+    width:850px;
+    text-align: center;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+#team_presentation h2{
+    font-size: 36px;
+    color: #363434;
+    font-weight: 600;
+   
+}
+#team_presentation p {
+    font-size: 20px;
+    color: #b1abab;
+}
+
+/* stats bloc */
+#team_stats{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: 110px;
+    width : 100%;
+}
+#team_stats h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+.stat{
+    width: 240px;
+}
+#team_stats p{
+    font-size: 17px;
+    color: #b1abab;
+    margin-top: -8px;
+}
+#team_pictures{
+    display: flex;
+    justify-content: center;
+    column-gap: 110px;
+    
+    text-align: center;
+    width:100%;
+}
+.associate_picture{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%; 
+}
+#team_pictures h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+}
+#team_pictures p{
+    color: #b1abab;
+    font-size: 15px;
+    
 }
 
