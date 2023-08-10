@@ -17,6 +17,12 @@ nav{
     color:whitesmoke;
    
 }
+nav a{
+    transition : all 0.3s ease 0s;
+}
+nav a:hover{
+    color: #cfd3d5;
+}
 
 #navbar{
     display: flex;
@@ -105,8 +111,12 @@ li{
     color:white;
     position: relative;
     font-size: 20px;
-
+    transition :  ease 0.5s ;
     }
+.sub_btn:hover{
+    background-color: #5ba3b7;
+    cursor: pointer;
+}
 
 /* -----------------Second block / cards ---------------*/
 
@@ -152,6 +162,10 @@ li{
     row-gap: 25px;
     padding :0px 20px 0px 20px;
     box-shadow: -4px  4px 10px #9f9d9d;
+    transition : ease 0.5s;
+}
+.card:hover{
+    transform: translateY(-15px);
 }
 .card i{
     font-size: 50px;
@@ -193,6 +207,7 @@ padding-top: 100px;
     align-items: center;
     margin-bottom: 100px;
     padding: 100px 0px 0px 0px;
+    
 }
 #team_presentation{
     display: flex;
@@ -213,6 +228,7 @@ padding-top: 100px;
     font-size: 20px;
     color: #b1abab;
 }
+
 
 /* stats bloc */
 #team_stats{
@@ -246,6 +262,26 @@ padding-top: 100px;
     width: 240px;
     height: 240px;
     border-radius: 50%; 
+    filter: grayscale(100%);
+    transition : ease 0.5s;
+    position: relative;
+    z-index: -1;
+    
+}
+.ImgAndSocial{
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+.ImgAndSocial:hover .associate_picture{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.ImgAndSocial:hover .social_media_team{
+    transform: translateY(50px) translateX(50px);
+    opacity: 1;
 }
 #team_pictures h4{
     font-weight: 600;
@@ -257,6 +293,42 @@ padding-top: 100px;
     font-size: 15px;
     
 }
+.member{
+    position: relative;
+    overflow: hidden;
+    
+    border-top-left-radius: 115px;
+}
+.social_media_team{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 180px;
+    row-gap: 7px;
+    right: 240px;
+    opacity: 0;
+    transition :  ease 0.5s;
+    
+}
+.team_social:hover{
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+   
+    
+.team_social{
+    width:30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+.fa-skype{
+    padding-top: 6px;
+}
+
 
 /* ----------------- fifth bloc / parallax ---------------*/
 
@@ -319,6 +391,13 @@ padding-top: 100px;
     background-color: transparent;
     color:white;
     font-size: 19px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  #TextAndBtn_parallax button:hover {
+    transform: translateY(-8px);
+    background-color: #ffffff;
+    color:#0a0101;
   }
 
     /* ----------------- sixth bloc / clients ---------------*/
@@ -402,6 +481,13 @@ padding-top: 100px;
         font-size: 20px;
         border:none;
         border-radius: 5px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    #learn_more button:hover{
+        transform: translateY(-4px);
+        background-color: rgb(33, 107, 225);
+        
     }
     
     #learn_more_block img{
@@ -455,6 +541,14 @@ padding-top: 100px;
         padding: 33px 23px 0px 23px;
         row-gap: 0px;
         box-shadow: 0px 5px 7px #c7c4c4;
+        transition: all 0.4s ease;
+    }
+    
+    .NonSale:hover {
+        transform: translateY(-26px);
+    }
+    .NonSale:hover ~ #OnSaleCard{
+        transform: translateY(26px);
     }
     
     .price{
@@ -518,11 +612,23 @@ padding-top: 100px;
         margin-top: 30px;
         width: 95%;
         font-size: 18;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    .pricing_card button:hover{
+        background-color: rgb(33, 107, 225);
+        color:white;
     }
     #OnSaleCard{
         margin-top: -28px;
         position: relative;
+        
+       
     }
+    .third{
+        order:1;
+    }
+    
     .sale{
         font-weight: 400;
         height: 65px;
@@ -538,6 +644,8 @@ padding-top: 100px;
         border-bottom-left-radius: 10px;
         line-height: 0.9;
     }
+   
+    
 
     /* ----------------- ninth bloc / blog bloc ---------------*/
 
@@ -574,6 +682,7 @@ padding-top: 100px;
         display:flex;
         flex-direction: column;
         row-gap: 12px;
+        
     }
     .blog_card p{
         font-size: 17px;
@@ -590,12 +699,48 @@ padding-top: 100px;
         font-size: 19px;
         color: rgb(98, 151, 235);
         font-weight: 600;
+        transition: all 0.4s ease;
+        cursor: pointer;
     }
+    .blog_card h4:hover{
+        color: rgb(56, 105, 186)
+    }
+
     #blog_cards img{
         width: 410px;
         height: 290px;
         border-radius: 5px;
+        transition: all 0.6s ease;
+        cursor: pointer;
+        
     }
+    #blog_cards img:hover{
+        filter: brightness(0.7);
+    }
+    #blog_cards img:hover+.Blog_Author_Date{
+        opacity: 1;
+    }
+    .img_and_author_date_blog{
+        position: relative;
+    }
+    .Blog_Author_Date{
+        position: absolute;
+        bottom: 220px;
+        left: 25px;
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+    .Blog_Author_Date h4{
+        font-weight: bold;
+        color:white;
+    }
+    .Blog_Author_Date p{
+        font-size:15px;
+        color:white;
+    }
+    
+    
+    
 
     /* --------------------------footer -------------------------*/
     footer{
@@ -617,6 +762,12 @@ padding-top: 100px;
         border: 2px solid  #7c7777;
         color: #807a7a;
         padding:15px 15px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    #footer_social_media i:hover{
+        color: black;
+        background-color:grey;
     }
     #footer_links{
         display: flex;
@@ -625,14 +776,22 @@ padding-top: 100px;
         column-gap: 35px;
         margin-top: 20px;
         
+        
     }
     #footer_links h3{
         font-weight: normal;
+        transition: all 0.4s ease;
+        cursor : pointer;
+    }
+    #footer_links h3:hover{
+        text-decoration: none;
+        color: #c5baba; 
     }
     #copyright{
        text-align: center;
        color: #807a7a;
        margin-top: 20px;
+      
     }
     
     
