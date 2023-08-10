@@ -263,7 +263,7 @@ padding-top: 100px;
 #parallax_bloc {
     position: relative;
     height: 545px;
-    margin-bottom: 500px;
+    
   
   }
   
@@ -319,5 +319,321 @@ padding-top: 100px;
     background-color: transparent;
     color:white;
     font-size: 19px;
+  }
+
+    /* ----------------- sixth bloc / clients ---------------*/
+  #clients_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 100px 0px 0px 0px;
+    background-color: #f4f0f0;
+    height: 800px;
+  }
+  #clients_block h2{
+    font-size: 35px;
+    color: #363434;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  #clients_block p{
+    font-size: 20px;
+    color: #c8c2c2;
+    width: 650px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #logos_clients_block{
+    display:flex;
+    justify-content: center;
+    column-gap: 55px;
     
   }
+  #logos_clients_block img{
+    width: 115px;
+    height: 90px;
+    margin: 0px 30px 0px 30px;
+   opacity: 0.5;
+  }
+
+/* ----------------- seventh bloc / learn more ---------------*/
+    #learn_more_block{
+        display:flex;
+        justify-content: center;
+        column-gap: 150px;
+        padding-top: 100px;
+        margin-bottom: 150px;
+    }
+    #learn_more{
+        width: 35%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+    }
+    #learn_more h2{
+        font-size: 29px;
+        color: #363434;
+        font-weight: bold;
+    }
+    #learn_more p{
+        font-size: 19px;
+        color: #7b7676;
+        
+    }
+    #stats_learn_more{
+        display: flex;
+        column-gap: 60px;
+    }
+    .stat_learn_more h4{
+        font-size: 28px;
+        font-weight: normal;
+    }
+    .stat_learn_more p{
+        font-size: 16px;
+        color: #0a0101;
+    }
+    #learn_more button{
+        width:172px;
+        height: 52px;
+        background-color: rgb(69, 131, 232);
+        color:white;
+        font-size: 20px;
+        border:none;
+        border-radius: 5px;
+    }
+    
+    #learn_more_block img{
+        width: 35%;
+        height: 40%;
+        margin-top:-40px
+    }
+
+    /* ----------------- eighth bloc / Pricing ---------------*/
+
+    #pricing_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        background-color: #f4f0f0;
+        height: 950px;
+        padding-top:100px;
+    }
+    #pricing_block h2{
+        font-size: 35px;
+        color: #363434;
+        font-weight: 600;
+        
+    }
+    .pricing_p{
+        font-size: 20px;
+        color: #c8c2c2;
+        width: 650px;
+        text-align: center;
+        margin-bottom:85px;
+        
+    }
+    #pricing_cards{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        
+        
+    }
+    .pricing_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 15px;
+        width:400px;
+        height: 510px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 33px 23px 0px 23px;
+        row-gap: 0px;
+        box-shadow: 0px 5px 7px #c7c4c4;
+    }
+    
+    .price{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        
+    }
+    .dollarSign{
+        font-weight: normal;
+        font-size: 35px;
+        padding-bottom: 25px;
+        color: rgb(69, 131, 232);
+
+    }
+    .price p{
+        color: #999595;
+        padding-top: 40px;
+
+    }
+    .dollarValue{
+        font-weight:500;
+        font-size: 75px;
+        color: rgb(69, 131, 232);
+    }
+    .advantagesAndValues{
+        display:flex; 
+        width:100%;
+        justify-content: space-between;
+        column-gap: 30px;
+        font-size: 20px;
+       
+       
+    }
+    .advantagesAndValues li{
+        margin-bottom: 15px;
+        
+       
+    }
+    .advantages{
+        text-align: left;
+    }
+    .values{
+        text-align: right;
+    }
+    .fa-circle-check {
+        color: rgb(71, 170, 109);
+    }
+    .fa-circle-xmark{
+        color: rgb(204, 70, 70);
+    }
+    .pricing_card button{
+        width: 200px;
+        height: 50px;
+        background: white;
+        color:rgb(69, 131, 232);
+        font-size: 20px;
+        border:1px solid rgb(69, 131, 232);
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 95%;
+        font-size: 18;
+    }
+    #OnSaleCard{
+        margin-top: -28px;
+        position: relative;
+    }
+    .sale{
+        font-weight: 400;
+        height: 65px;
+        width: 65px;
+        font-size: 17px;
+        background-color: rgb(69, 118, 197);
+        position: absolute;
+        left: 335px;
+        bottom:445px;
+        color: white;
+        padding-top: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        line-height: 0.9;
+    }
+
+    /* ----------------- ninth bloc / blog bloc ---------------*/
+
+    #blog_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        background-color: #ffffff;
+        height: 880px;
+        padding-top:100px;
+    }
+    #blog_block h2{
+        font-size: 35px;
+        color: #363434;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .blog_p{
+        font-size: 20px;
+        color: #c8c2c2;
+        width: 650px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #blog_cards{
+        display: flex;
+        justify-content: center;
+        column-gap: 55px;
+        
+    }
+    .blog_card{
+        width:410px;
+        display:flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    .blog_card p{
+        font-size: 17px;
+        color: #a59f9f;
+        font-weight: normal;
+    }
+    
+    .blog_card h3{
+        font-size: 22px;
+        color: #363434;
+        font-weight: 600;
+    }
+    .blog_card h4{
+        font-size: 19px;
+        color: rgb(98, 151, 235);
+        font-weight: 600;
+    }
+    #blog_cards img{
+        width: 410px;
+        height: 290px;
+        border-radius: 5px;
+    }
+
+    /* --------------------------footer -------------------------*/
+    footer{
+        background-color: #25272B;
+        height: 330px;
+        padding-top: 100px;
+    }
+    #footer_social_media{
+        display:flex;
+        justify-content: center;
+        column-gap: 45px;
+    }
+    #footer_social_media i{
+        font-size: 17px;
+        width:50px;
+        height: 50px;
+        font-weight: normal;
+        border-radius: 100px;
+        border: 2px solid  #7c7777;
+        color: #807a7a;
+        padding:15px 15px;
+    }
+    #footer_links{
+        display: flex;
+        justify-content: center;
+        color: #807a7a;
+        column-gap: 35px;
+        margin-top: 20px;
+        
+    }
+    #footer_links h3{
+        font-weight: normal;
+    }
+    #copyright{
+       text-align: center;
+       color: #807a7a;
+       margin-top: 20px;
+    }
+    
+    
+
