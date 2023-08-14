@@ -12,7 +12,7 @@ body{
     
 }
 
-#back_to_top{
+#back_to_top {
     position: fixed;
     bottom: 30px;
     right: 35px;
@@ -825,6 +825,711 @@ padding-top: 100px;
        margin-top: 20px;
       
     }
+    
+    /* responsive  */
+
+    @media screen and (max-width: 400px) {
+        body{
+            width: 400px !important;
+            
+        }
+        #NewsletterAndCat{
+            display:flex ; 
+            flex-direction: column;
+            width: 400px;
+            margin-top: 20px;
+            text-align: center;
+            align-items: center;
+        }
+        #newsletter{
+            display:flex;
+            flex-direction: column;
+            width:400px;
+            align-items: center;
+            margin-top: 20px;
+            
+        }
+        #cat_img{
+            width: 80%;
+            height: 40%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .sub_p{
+            font-size: 14px;
+            color: #3c3a3a;
+            margin-top: 10px;
+            width: 350px;
+            
+        }
+        .sub_h1{
+            font-size: 30px;
+            color: #363434;
+            width:85%;
+            
+
+        }
+        
+        #InputAndBtn_Subscribe{
+            display:flex;
+            width: 85%;
+            margin-top: 20px;
+            justify-content: center;
+            
+            
+        }
+        .sub_input{
+            border-radius: 30px;
+            width: 300px;
+            height: 40px;
+            padding:10px 145px 10px 20px;
+            font-size: 16px;
+            background-color: #dfedf1;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            position: absolute;
+        }
+        .sub_btn{
+            border-radius: 100px;
+            height: 35px;
+            width:90px;
+            left:103px;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background-color: #3698b3;
+            color:white;
+            position: relative;
+            font-size: 10px;
+            transition :  ease 0.5s ;
+            }
+        .sub_btn:hover{
+            background-color: #5ba3b7;
+            cursor: pointer;
+        }
+
+        /*-------------------------------------- second block / cards ---------------------------------------*/
+
+        #second_bloc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+            row-gap: 10px;
+            margin-bottom: 40px;
+            width: 400px;
+
+        }
+        #second_bloc h2{
+            font-size: 30px;
+            color: #363434;
+           
+        }
+        .second_bloc_p {
+            font-size: 15px;
+            color: #878282;
+            width: 350px;
+            text-align: center;
+        }
+        
+        .cards{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           row-gap: 30px;
+           width:100% ;
+           margin-top: 20px;
+
+           
+        }
+        
+        .card{
+            width: 330px;
+            height: 240px;
+            background: radial-gradient(rgb(171, 210, 244),#3193af) ;
+            color:whitesmoke;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 25px;
+            padding :0px 20px 0px 20px;
+            box-shadow: -4px  4px 10px #9f9d9d;
+            transition : all ease 0.5s;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .card i{
+            font-size: 40px;
+        }
+        .card h3{
+            font-size: 20px;
+        }
+
+        /* ----------------- third bloc ---------------*/
+
+        #third_bloc{
+        background-color: #f4f0f0;
+        text-align: center;
+        height: 250px;
+        width: 400px;
+        padding-top: 30px;
+        
+        }
+        
+        
+        #third_bloc h2{
+            font-size: 30px;
+            color: #363434;
+        }
+        #third_bloc p {
+            font-size: 17px;
+            color: #878282;
+            width: 90%;
+            margin: 8px auto 0px auto;
+        }
+        /* ----------------- fourth bloc / Team members and stats ---------------*/
+
+        /*intro team bloc */
+        
+        #team_bloc{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 30px 0px 0px 0px;
+            width: 400px;
+            flex-wrap: wrap;
+            
+            
+        }
+        #team_presentation{
+            display: flex;
+            flex-direction: column;
+            width:400px;
+            text-align: center;
+            row-gap: 10px;
+            margin-bottom: 20px;
+            align-items: center;
+            
+            
+        }
+        #team_presentation h2{
+            font-size: 24px;
+            color: #363434;
+            font-weight: 600;
+            width: 370px;
+        
+        }
+        #team_presentation p {
+            font-size: 17px;
+            color: #b1abab;
+            width: 360px;
+
+        }
+
+
+        /* stats bloc */
+        #team_stats{
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width : 400px;
+            row-gap: 15px;
+            
+        }
+        #team_stats h4{
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .stat{
+            width: 100px;
+        }
+        #team_stats p{
+            font-size: 14px;
+            color: #b1abab;
+            margin-top: 0px;
+        }
+        #team_pictures{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            text-align: center;
+            width:400px;
+        }
+        .associate_picture{
+            width: 240px;
+            height: 240px;
+            border-radius: 50%; 
+            filter: grayscale(100%);
+            transition : ease 0.5s;
+            position: relative;
+            z-index: -1;
+            
+        }
+        .ImgAndSocial{
+            overflow: hidden;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%; 
+            cursor: pointer;
+        }
+        .ImgAndSocial:hover .associate_picture{
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+        .ImgAndSocial:hover .social_media_team{
+            transform: translateY(50px) translateX(50px);
+            opacity: 1;
+        }
+        #team_pictures h4{
+            font-weight: 600;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        #team_pictures p{
+            color: #b1abab;
+            font-size: 15px;
+            
+        }
+        .member{
+            position: relative;
+            overflow: hidden;
+            
+            border-top-left-radius: 115px;
+        }
+        .social_media_team{
+            display:flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 180px;
+            row-gap: 7px;
+            right: 240px;
+            opacity: 0;
+            transition :  ease 0.5s;
+            
+        }
+        .team_social:hover{
+            background-color: rgb(37, 35, 35);
+            color: white;
+        }
+        
+            
+        .team_social{
+            width:30px;
+            height: 30px;
+            font-size: 18px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50px;
+            transition: ease 0.4s;
+            cursor: pointer;
+        }
+        .fa-skype{
+            padding-top: 6px;
+        }
+        /* ----------------- fifth bloc / parallax ---------------*/
+
+        #parallax_bloc {
+            position: relative;
+            height: 420px;
+        }
+        
+        #parallax_background {
+            background-image: url(img\focused_220909150-stock-photo-group-business-people-working-office.jpg);
+            background-size:cover;
+            background-position:center;
+            height: 450px;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            background-attachment: fixed;
+        }
+        
+        #parallax_background::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(29, 28, 28, 0.6);
+        
+        }
+        
+        #TextAndBtn_parallax {
+            text-align: center;
+            position: relative;
+            padding-top: 20px;
+            
+        }
+        
+        #TextAndBtn_parallax h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color : #ffffff;
+        }
+        
+        #TextAndBtn_parallax p {
+            font-size: 16px;
+            width: 300px;
+            margin: 20px auto 50px auto;;
+            color: #ccc6c6;
+
+        }
+        /* ----------------- sixth bloc / clients ---------------*/
+        #clients_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 50px 0px 0px 0px;
+            background-color: #f4f0f0;
+            height: 500px;
+        }
+        #clients_block h2{
+            font-size: 30px;
+            color: #363434;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        #clients_block p{
+            font-size: 17px;
+            color: #c8c2c2;
+            width: 360px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #logos_clients_block{
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            
+        }
+        #logos_clients_block img{
+            width: 80px;
+            height:60px;
+            margin: 0px;
+        opacity: 0.5;
+        }
+
+        /* ----------------- seventh bloc / learn more ---------------*/
+    #learn_more_block{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    #learn_more{
+        width: 350px;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #learn_more h2{
+        font-size: 29px;
+        color: #363434;
+        font-weight: bold;
+    }
+    #learn_more p{
+        font-size: 19px;
+        color: #7b7676;
+        
+    }
+    #stats_learn_more{
+        display: flex;
+    }
+    .stat_learn_more h4{
+        font-size: 28px;
+        font-weight: normal;
+    }
+    .stat_learn_more p{
+        font-size: 16px;
+        color: #0a0101;
+    }
+    #learn_more button{
+        width:172px;
+        height: 52px;
+        background-color: rgb(69, 131, 232);
+        color:white;
+        font-size: 20px;
+        border:none;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    #learn_more button:hover{
+        transform: translateY(-4px);
+        background-color: rgb(33, 107, 225);
+        
+    }
+    
+    #learn_more_block img{
+        width: 80%;
+        height: 40%;
+        margin-top:30px
+    }
+     /* ----------------- eighth bloc / Pricing ---------------*/
+
+     #pricing_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f0f0;
+        height: 1350px;
+        padding-top:20px;
+        width: 400px;
+    }
+    #pricing_block h2{
+        font-size: 30px;
+        color: #363434;
+        font-weight: 600;
+        
+    }
+    .pricing_p{
+        font-size: 17px;
+        color: #c8c2c2;
+        width: 360px;
+        text-align: center;
+        margin-bottom:15px;
+        
+    }
+    #pricing_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    
+    .pricing_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 15px;
+        width:360px;
+        height: 350px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        row-gap: 0px;
+        box-shadow: 0px 5px 7px #c7c4c4;
+        transition: all 0.4s ease;
+    }
+    
+    .NonSale:hover {
+        transform: translateY(-0px);
+    }
+    .NonSale:hover ~ #OnSaleCard{
+        transform: translateY(0px);
+    }
+    .pricing_card:hover{
+        transform: scale(1.03);
+        
+    }
+    
+    .price{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        
+    }
+    .dollarSign{
+        font-weight: normal;
+        font-size: 27px;
+        padding-bottom: 25px;
+        color: rgb(69, 131, 232);
+
+    }
+    .price p{
+        color: #999595;
+        padding-top: 20px;
+
+    }
+    .dollarValue{
+        font-weight:500;
+        font-size: 50px;
+        color: rgb(69, 131, 232);
+    }
+    .advantagesAndValues{
+        display:flex; 
+        width:100%;
+        justify-content: space-between;
+        column-gap: 0px;
+        font-size: 17px;
+       
+       
+    }
+    .advantagesAndValues li{
+        margin-bottom: 5px;
+        
+       
+    }
+    .advantages{
+        text-align: left;
+    }
+    .values{
+        text-align: right;
+    }
+    .fa-circle-check {
+        color: rgb(71, 170, 109);
+    }
+    .fa-circle-xmark{
+        color: rgb(204, 70, 70);
+    }
+    .pricing_card button{
+        
+        height: 40px;
+        background: white;
+        color:rgb(69, 131, 232);
+        font-size: 18px;
+        border:1px solid rgb(69, 131, 232);
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 80%;
+        font-size: 18;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    .pricing_card button:hover{
+        background-color: rgb(33, 107, 225);
+        color:white;
+    }
+    #OnSaleCard{
+        margin-top: -0px;
+        position: relative;
+        
+       
+    }
+    .third{
+        order:1;
+    }
+    
+    .sale{
+        font-weight: 400;
+        height: 60px;
+        width: 60px;
+        font-size: 15px;
+        background-color: rgb(69, 118, 197);
+        position: absolute;
+        left: 300px;
+        bottom:290px;
+        color: white;
+        padding-top: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        line-height: 0.9;
+    }
+    /* ----------------- ninth bloc / blog bloc ---------------*/
+
+    #blog_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        background-color: #ffffff;
+        height: 880px;
+        padding-top:100px;
+    }
+    #blog_block h2{
+        font-size: 35px;
+        color: #363434;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .blog_p{
+        font-size: 20px;
+        color: #c8c2c2;
+        width: 650px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #blog_cards{
+        display: flex;
+        justify-content: center;
+        column-gap: 55px;
+        
+    }
+    .blog_card{
+        width:410px;
+        display:flex;
+        flex-direction: column;
+        row-gap: 12px;
+        
+    }
+    .blog_card p{
+        font-size: 17px;
+        color: #a59f9f;
+        font-weight: normal;
+    }
+    
+    .blog_card h3{
+        font-size: 22px;
+        color: #363434;
+        font-weight: 600;
+    }
+    .blog_card h4{
+        font-size: 19px;
+        color: rgb(98, 151, 235);
+        font-weight: 600;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    .blog_card h4:hover{
+        color: rgb(56, 105, 186)
+    }
+
+    #blog_cards img{
+        width: 410px;
+        height: 290px;
+        border-radius: 5px;
+        transition: all 0.6s ease;
+        cursor: pointer;
+        
+    }
+    #blog_cards img:hover{
+        filter: brightness(0.7);
+    }
+    #blog_cards img:hover+.Blog_Author_Date{
+        opacity: 1;
+    }
+    .img_and_author_date_blog{
+        position: relative;
+    }
+    .Blog_Author_Date{
+        position: absolute;
+        bottom: 220px;
+        left: 25px;
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+    .Blog_Author_Date h4{
+        font-weight: bold;
+        color:white;
+    }
+    .Blog_Author_Date p{
+        font-size:15px;
+        color:white;
+    }
+    
+    
+   
+    
+
+    
+    
+    
+
+    }
+
     
     
 
