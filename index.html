@@ -42,7 +42,29 @@
 <body> 
     <div id="premier_bloc">
         <header>
-            <nav>
+            <div>
+                <button id="burger_btn"><i class="fa-solid fa-bars"></i></button>
+                <div id="burger-menu" class="initial">
+                    <ul class="burger_social">
+                        <li><a title="kucra's facebook page"  href="#" class="navbar_component"><i class="uil uil-facebook-f"></i></a></li>
+                        <li><a title="kucra's twitter page"  href="#" class="navbar_component"><i class="uil uil-twitter"></i></a></li>
+                        <li><a title="kucra's instagram page"  href="#" class="navbar_component"><i class="uil uil-instagram"></i></a></li>
+                    </ul>
+                    <ul class="burger_links">
+                        <li><a title="Homepage of Kucra's website"  href="#premier_bloc" class="navbar_component">HOME</a></li>
+                        <li><a title="Kucra FEATURES"  href="#second_bloc" class="navbar_component">FEATURES</a></li>
+                        <li><a title="Kucra CLIENTS"  href="#clients_block" class="navbar_component">CLIENT</a></li>
+                        <li><a title="Kucra PRICING"  href="#pricing_block" class="navbar_component">PRICING</a></li>
+                        <li><a title="Kucra's TEAM"  href="#team_bloc" class="navbar_component">OUR TEAM</a></li>
+                        <li><a title="ABOUT Kucra"  href="#learn_more_block" class="navbar_component">ABOUT</a></li>
+                        <li><a title="Kucra's Blog"  href="#blog_block" class="navbar_component">BLOG</a></li>
+                        <li><a title="Contact Kucra"  href="#footer_social_media" class="navbar_component">CONTACT</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <nav id="desktop_navbar">
 
                 <h2 id="logo">Kucra</h2>
 
@@ -414,6 +436,25 @@
         <a title="linked in of mohamed aziz akkari" href="https://www.linkedin.com/in/aziz-akkari/"><p id="copyright">Mohamed Aziz Akkari </p></a>
 
     </footer>
+
+    <script>
+        document.getElementById("burger_btn").addEventListener("click", function(event) {
+            event.stopPropagation();
+            var burgerMenu = document.getElementById("burger-menu");
+            if(document.getElementById("burger-menu").classList.contains("initial")) {
+                burgerMenu.classList.toggle("open");
+                burgerMenu.classList.remove("initial");
+            }
+            else if (document.getElementById("burger-menu").classList.contains("open")) {
+            burgerMenu.classList.remove("open");
+            burgerMenu.classList.add("close");
+            }
+            else{
+            burgerMenu.classList.remove("close");
+            burgerMenu.classList.add("open");
+            }
+        });
+    </script>
 
 
 </body>

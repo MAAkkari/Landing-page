@@ -11,7 +11,12 @@ body{
     font-family: 'Poppins', sans-serif;
     
 }
-
+#burger_btn{
+    display:none;
+}
+#burger-menu{
+    display: none;
+}
 #back_to_top {
     position: fixed;
     bottom: 30px;
@@ -833,11 +838,71 @@ padding-top: 100px;
             width: 400px !important;
             
         }
+        #back_to_top{
+            display: none;
+        }
+        #burger_btn{
+            position: fixed;
+            left:15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            border:none;
+            background-color:transparent;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            z-index: 10;
+            display: block;
+        }
+
+        .burger_social{
+            display: flex;
+            justify-content: center;
+        }
+        #burger-menu{
+            width:100%;
+            text-align: center;
+            position: fixed;
+            color: wheat;
+            background-color: #2a88ad;
+            z-index: 9;
+            height: fit-content;
+            padding:20px;
+            display: block;
+        }
+        .initial{
+            position: absolute; 
+            bottom:790px;
+            display:block;
+            
+        }
+        .open{
+            bottom:522px; 
+            animation:  slideDown 0.4s ease-in-out;
+        }
+        .close{ 
+            bottom:790px;
+            animation:  slideUp 0.4s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                bottom:790px;
+            }
+            to {
+                bottom:522px; }}
+        @keyframes slideUp {
+            from {
+                bottom:522px; 
+            }
+            to {
+                bottom:790px; }}
+
         #NewsletterAndCat{
             display:flex ; 
             flex-direction: column;
             width: 400px;
-            margin-top: 20px;
+            margin-top: 10px;
             text-align: center;
             align-items: center;
         }
@@ -869,7 +934,7 @@ padding-top: 100px;
             
 
         }
-        nav{
+        #desktop_navbar{
             display:none;
         }
         #InputAndBtn_Subscribe{
