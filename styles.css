@@ -631,6 +631,7 @@ padding-top: 100px;
     .fa-circle-xmark{
         color: rgb(204, 70, 70);
     }
+    
     .pricing_card button{
         width: 200px;
         height: 50px;
@@ -645,16 +646,17 @@ padding-top: 100px;
         transition: all 0.4s ease;
         cursor: pointer;
     }
+
     .pricing_card button:hover{
         background-color: rgb(33, 107, 225);
         color:white;
     }
+
     #OnSaleCard{
         margin-top: -28px;
         position: relative;
-        
-       
     }
+
     .third{
         order:1;
     }
@@ -705,7 +707,6 @@ padding-top: 100px;
         display: flex;
         justify-content: center;
         column-gap: 55px;
-        
     }
     .blog_card{
         width:410px;
