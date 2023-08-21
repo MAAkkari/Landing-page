@@ -876,31 +876,31 @@ padding-top: 100px;
         }
         .initial{
             position: absolute; 
-            bottom:790px;
+            top:-40%;
             display:block;
             
         }
         .open{
-            bottom:522px; 
+            top:0% ;
             animation:  slideDown 0.4s ease-in-out;
         }
         .close{ 
-            bottom:790px;
+            top:-40%;
             animation:  slideUp 0.4s ease-in-out;
         }
 
         @keyframes slideDown {
             from {
-                bottom:790px;
+                top:-40%;
             }
             to {
-                bottom:522px; }}
+                top:0% ; }}
         @keyframes slideUp {
             from {
-                bottom:522px; 
+                top:0% ;
             }
             to {
-                bottom:790px; }}
+                top:-40%; }}
 
         #NewsletterAndCat{
             display:flex ; 
